@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biker Zone</title>
-    <!-- DaisyUI & TailwindCSS -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind v4 (browser build) -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font - Poppins -->
+
+    <!-- DaisyUI v5 -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <style>
-        .font-poppins{
+        .font-poppins {
             font-family: "Poppins", sans-serif;
         }
     </style>
-
 </head>
+
 <body class="font-poppins">
     <!-- Header Section -->
     <header class="md:container mx-auto">
@@ -194,6 +198,53 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="mt-24 mx-5">
+            <div>
+                <!-- Title -->
+                <div class="text-center mb-14 md:mb-20">
+                    <h1 class="text-3xl md:text-5xl font-bold">Frequently Asked <span class="text-[#E76F51]">Questions</span>
+                    </h1>
+                </div>
+                <!-- Img & Accordion -->
+                <div class="flex flex-col gap-20 lg:flex-row items-center justify-center">
+                    <!-- Img -->
+                <div>
+                    <img class="lg:w-[445px]" src="images/others/faq.png" alt="">
+                </div>
+                <!-- Accordion -->
+                <div class="space-y-4">
+                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:w-[550px]">
+                        <input type="radio" name="my-accordion-2" checked="checked" />
+                        <div class="collapse-title font-semibold">What are the most important things I should
+                            know about riding a bike?</div>
+                        <div class="collapse-content text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore minus
+                            illo debitis nesciunt velit quasi.</div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:w-[550px]">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title font-semibold">How can I tell if my helmet is old and I need a
+                            new one?</div>
+                        <div class="collapse-content text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, obcaecati.
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:w-[550px]">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title font-semibold">My bike has been in storage is it safe to ride?</div>
+                        <div class="collapse-content text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum at
+                            laborum iste consectetur nobis nostrum fuga voluptatem praesentium soluta magni.</div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 border border-base-300 lg:w-[550px]">
+                        <input type="radio" name="my-accordion-2" />
+                        <div class="collapse-title font-semibold">What rules should I follow when riding my bike?</div>
+                        <div class="collapse-content text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sunt
+                            consequatur ab? Iusto, dolor consectetur?</div>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>
